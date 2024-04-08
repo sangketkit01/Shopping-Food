@@ -36,7 +36,7 @@ public class FileManager {
         } catch (IOException e) {
             e.printStackTrace();
         } catch (NullPointerException e1) {
-            System.out.println("Please select file motherfucker");
+            System.out.println("Please select a file");
         }
         return null;
 
