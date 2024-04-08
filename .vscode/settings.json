@@ -1,0 +1,10 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "mysql-connector-j-8.3.0.jar",
+    "c:\\jdbc-api-1.4.jar",
+    "c:\\Users\\thira\\sqlite-jdbc-3.27.2.1 (1).jar"
+  ],
+  "java.project.sourcePaths": ["."],
+  "java.debug.settings.onBuildFailureProceed": true
+}

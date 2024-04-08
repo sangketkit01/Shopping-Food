@@ -1,0 +1,3 @@
+-ไฟล์นามสกุล .sql ใน Directory "App" เมื่่อกด Zip ตัว Database มาแค่ structure ครับ Data ไม่มาด้วยครับ รบกวนโหลด .sql ที่แนบแยกไว้ แล้วนำไปแทนที่ใน Directory "App" ด้วยครับ
+-รบกวน Import file นามสกุลเข้า MySql ด้วยนะครับ
+-ใน ConnectData.java ใน Direcctory "App" รบกวนไปเปลี่ยนบรรทัดที่ 7 ตรงส่วน Password ให้เป็น Password MySql ของท่านด้วยนะครับ
