@@ -41,7 +41,7 @@ public class ShopPage {
         frame.getContentPane().add(Header);
         Header.setLayout(null);
 
-        JLabel PartnerName = new JLabel("Partner’s Name");
+        JLabel PartnerName = new JLabel("Partner's Name");
         PartnerName.setHorizontalAlignment(SwingConstants.RIGHT);
         PartnerName.setBounds(605, 10, 115, 20);
         PartnerName.setFont(new Font("SansSerif", Font.PLAIN, 16));
