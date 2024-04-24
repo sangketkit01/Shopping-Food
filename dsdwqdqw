@@ -1,0 +1,42 @@
+[1mdiff --git a/App/ShopLoginAndRegister.java b/App/ShopLoginAndRegister.java[m
+[1mindex d0c1d9d..4b50103 100644[m
+[1m--- a/App/ShopLoginAndRegister.java[m
+[1m+++ b/App/ShopLoginAndRegister.java[m
+[36m@@ -455,7 +455,7 @@[m [mpublic class ShopLoginAndRegister implements ActionListener {[m
+         categoryComboBox.setFont(new Font("Tahoma", Font.PLAIN, 11));[m
+         categoryComboBox.setBounds(26, 370, 287, 30);[m
+         categoryComboBox[m
+[31m-                .setModel(new DefaultComboBoxModel(new String[] { "main_dish", "healty", "dessert", "drink" }));[m
+[32m+[m[32m                .setModel(new DefaultComboBoxModel(new String[] { "Main dish", "healty", "dessert", "drink" }));[m
+         panel_1.add(categoryComboBox);[m
+ [m
+         JLabel categoryLabel = new JLabel("Food Category");[m
+[36m@@ -736,6 +736,7 @@[m [mpublic class ShopLoginAndRegister implements ActionListener {[m
+                 JOptionPane.showMessageDialog(null, "Incorrect ID number");[m
+             } else {[m
+                 try {[m
+[32m+[m[32m                    String category = String.valueOf(categoryComboBox.getSelectedItem()) == "Main dish" ? "main_dish" : String.valueOf(categoryComboBox.getSelectedItem());[m
+                     String insertQuery = String[m
+                             .format("Insert into store.store_user (username,password,name,surname,store_name,email,phone,bank,bank_account,category)"[m
+                                     +[m
+[36m@@ -746,7 +747,7 @@[m [mpublic class ShopLoginAndRegister implements ActionListener {[m
+                                     Store_Username_TextField.getText(), Email_Textfield.getText(),[m
+                                     Phone_number_textField.getText(),[m
+                                     String.valueOf(bankComboBox.getSelectedItem()), Bank_account_number_Field.getText(),[m
+[31m-                                    String.valueOf(categoryComboBox.getSelectedItem()));[m
+[32m+[m[32m                                    category);[m
+                     ConnectData.setData(insertQuery, "");[m
+                     JOptionPane.showMessageDialog(null, "Create account successfully");[m
+                     cl_register_partner.show(register_partner, "Login");[m
+[1mdiff --git a/FoodPic/Kuy Jirchin_margherita.png b/FoodPic/Kuy Jirchin_margherita.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cbf6d4b[m
+Binary files /dev/null and b/FoodPic/Kuy Jirchin_margherita.png differ
+[1mdiff --git a/FoodPic/Kuy Jirchin_steak.jpg b/FoodPic/Kuy Jirchin_steak.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c70a984[m
+Binary files /dev/null and b/FoodPic/Kuy Jirchin_steak.jpg differ
+[1mdiff --git a/profile/jirchin.jpg b/profile/jirchin.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2474f17[m
+Binary files /dev/null and b/profile/jirchin.jpg differ
