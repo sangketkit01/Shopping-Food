@@ -448,43 +448,6 @@ public class GuiCreater {
         }
     }
 
-    public JPanel createMenuPanel(int x, int y, int width, int height) {
-
-        JPanel panel = new JPanel();
-        panel.setLayout(null);
-        panel.setBounds(x, y, width, height);
-
-        JLabel imagelabel = createLabel("MainPagePic/foodpic4.jpg", 10, 10, 138, 148);
-        panel.add(imagelabel);
-        panel.addMouseListener(new MouseListener() {
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-
-            }
-
-        });
-        return panel;
-    }
+    
 
 }
