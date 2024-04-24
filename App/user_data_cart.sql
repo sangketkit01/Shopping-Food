@@ -31,16 +31,6 @@ CREATE TABLE `cart` (
   `username` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `cart`
---
-
-LOCK TABLES `cart` WRITE;
-/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
-INSERT INTO `cart` VALUES ('Mario store','Beef wellington',1200,'FoodPic/beefwellington.png',2,'sangketkit03'),('Mario store','Hamburger',180,'FoodPic/hamburger.png',1,'sangketkit03'),('Mario store','Pizza Peperioni',300,'FoodPic/peperoni.jpg',1,'sangketkit03'),('Mario store','Foiegras',790,'FoodPic/foiegras.jpg',1,'sangketkit03'),('Mario store','Beef Wellington',1200,'FoodPic/Mario store_beefwellington.png',2,'kitty'),('Mario store','Foiegras',890,'FoodPic/Mario store_foiegras.jpg',2,'kitty'),('Mario store','Cottage Cheese Pasta',400,'FoodPic/Mario store_cottagecheese.jpg',2,'kitty'),('Mario store','Pizza Peperoni',490,'FoodPic/Mario store_peperoni.jpg',2,'kitty'),('Mario store','Spaghetti Carbonara',350,'FoodPic/Mario store_carbonara.jpg',2,'kitty'),('Mario store','Beef Tartare',1050,'FoodPic/Mario store_beeftartare.jpg',2,'kitty');
-/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +41,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-02  6:03:29
+-- Dump completed on 2024-04-24 21:03:32

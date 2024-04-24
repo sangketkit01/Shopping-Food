@@ -30,16 +30,6 @@ CREATE TABLE `food` (
   `description` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `food`
---
-
-LOCK TABLES `food` WRITE;
-/*!40000 ALTER TABLE `food` DISABLE KEYS */;
-INSERT INTO `food` VALUES ('Mario Store','Buffalo',100000,'FoodPic/Mario Store_buffalo.png',' Enter description...'),('Mario Store','Pigeon Grill',990,'FoodPic/Mario Store_pigeon.jpg',' Enter description...'),('Oh','kaw pad american',200,'FoodPic/Oh_beeftartare.jpg',' Enter description...'),('Oh','pizza',123,'FoodPic/Oh_margherita.png',' Enter description...'),('Oh','burger',65,'FoodPic/Oh_hamburger.png',' Enter description...');
-/*!40000 ALTER TABLE `food` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +40,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-02  6:03:29
+-- Dump completed on 2024-04-24 21:03:32
