@@ -455,7 +455,7 @@ public class ShopLoginAndRegister implements ActionListener {
         categoryComboBox.setFont(new Font("Tahoma", Font.PLAIN, 11));
         categoryComboBox.setBounds(26, 370, 287, 30);
         categoryComboBox
-                .setModel(new DefaultComboBoxModel(new String[] { "main_dish", "healty", "dessert", "drink" }));
+                .setModel(new DefaultComboBoxModel(new String[] { "Main dish", "healty", "dessert", "drink" }));
         panel_1.add(categoryComboBox);
 
         JLabel categoryLabel = new JLabel("Food Category");
@@ -736,6 +736,7 @@ public class ShopLoginAndRegister implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Incorrect ID number");
             } else {
                 try {
+                    String category = String.valueOf(categoryComboBox.getSelectedItem()) == "Main dish" ? "main_dish" : String.valueOf(categoryComboBox.getSelectedItem());
                     String insertQuery = String
                             .format("Insert into store.store_user (username,password,name,surname,store_name,email,phone,bank,bank_account,category)"
                                     +
@@ -746,7 +747,7 @@ public class ShopLoginAndRegister implements ActionListener {
                                     Store_Username_TextField.getText(), Email_Textfield.getText(),
                                     Phone_number_textField.getText(),
                                     String.valueOf(bankComboBox.getSelectedItem()), Bank_account_number_Field.getText(),
-                                    String.valueOf(categoryComboBox.getSelectedItem()));
+                                    category);
                     ConnectData.setData(insertQuery, "");
                     JOptionPane.showMessageDialog(null, "Create account successfully");
                     cl_register_partner.show(register_partner, "Login");
