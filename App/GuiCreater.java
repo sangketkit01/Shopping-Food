@@ -201,7 +201,7 @@ public class GuiCreater {
                 }
 
                 String store_name = rs.getString("store_name");
-                String picture_path = rs.getString("url");
+                String picture_path = rs.getString("url") == null ? "ShopPic/restaurantIcon.png" : rs.getString("url");
 
                 // create panel that show picture of a restaurant
                 JPanel picPanel = new JPanel();
