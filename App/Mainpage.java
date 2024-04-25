@@ -315,7 +315,7 @@ public class Mainpage implements ActionListener, MouseListener {
         JPanel healtyPanel = new JPanel();
         showRestuarantPanel.add(healtyPanel, "healty");
         healtyPanel.setLayout(null);
-        creater.createCategory(restuarantCard, selectPicPanel, healtyPanel, "healty");
+        creater.createCategory(restuarantCard, showRestuarantPanel, healtyPanel, "healty");
         healtyPanel.setBackground(new Color(30, 142, 95));
 
         JPanel drinkPanel = new JPanel();

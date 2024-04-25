@@ -13,11 +13,6 @@ public class CartAndPayPage extends Promotion {
     private String username;
     private CloseDisplayListener listener;
 
-    public static void main(String[] args) {
-        CartAndPayPage payPage = new CartAndPayPage("jirchin");
-        payPage.username = "jirchin";
-    }
-
     /**
      * Launch the application.
      */

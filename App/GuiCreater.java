@@ -221,6 +221,7 @@ public class GuiCreater {
                 // showCard(label, card, parent, store_name);
 
                 // Decorate restaurant's name
+                panel.add(label);
                 label.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
@@ -245,7 +246,6 @@ public class GuiCreater {
                     }
 
                 });
-                panel.add(label);
                 x += 180;
                 previous_size = y_restaurant;
                 parent.setPreferredSize(new Dimension(518, y_restaurant + 250));
