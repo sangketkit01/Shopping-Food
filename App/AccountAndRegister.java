@@ -16,13 +16,12 @@ public class AccountAndRegister extends Action implements ActionListener, FocusL
     private JPasswordField passwordRegisterField, confirmPasswordField, confirmResetPassfield, resetPassField,
             passwordField;
     private JLabel createAccountLabel, forgetpassLabel;
-    private JButton eyeClose1, eyeOpen1, backButton1,
+    private JButton backButton1,
             backForgetPassButton, backResetPassButton;
     private RoundedButton signInButton, signUpButton, resetPassButton, confirmResetPassbutton;
     private JPanel bigLoginPanel, bigRegisterPanel, picturePanel1, forgetpassPanel;
     private JPanel resetPassPanel;
     private String username;
-    // private Font shopFont = new Font("Arial", Font.BOLD, 20);
 
     /**
      * Launch the application.
@@ -342,41 +341,6 @@ public class AccountAndRegister extends Action implements ActionListener, FocusL
         JLabel confirmResetPassLabel = new JLabel("Confirm Password");
         confirmResetPassLabel.setBounds(44, 141, 120, 13);
         smallForgetPanel_1.add(confirmResetPassLabel);
-
-        eyeClose1 = new JButton(create.createImage("", 25, 25));
-        eyeClose1.setBorder(BorderFactory.createEmptyBorder());
-        eyeClose1.setBackground(new Color(240, 240, 240));
-        eyeClose1.setBounds(196, 177, 25, 25);
-        eyeClose1.setCursor(new Cursor(12));
-
-        eyeOpen1 = new JButton(create.createImage("MainPagePic/Blind.png", 30, 30));
-        eyeOpen1.setBorder(BorderFactory.createEmptyBorder());
-        eyeOpen1.setBackground(new Color(240, 240, 240));
-        eyeOpen1.setBounds(195, 176, 30, 30);
-        eyeOpen1.setCursor(new Cursor(12));
-        eyeOpen1.setVisible(false);
-
-        eyeClose1.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                passwordField.setEchoChar((char) 0);
-                eyeClose1.setVisible(false);
-                eyeOpen1.setVisible(true);
-            }
-
-        });
-
-        eyeOpen1.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                passwordField.setEchoChar('\u25cf');
-                eyeClose1.setVisible(true);
-                eyeOpen1.setVisible(true);
-            }
-
-        });
 
         backButton1 = new JButton();
         backButton1.setText("\u276E");
