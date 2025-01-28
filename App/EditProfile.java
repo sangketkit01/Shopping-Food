@@ -19,7 +19,7 @@ public class EditProfile {
         // Set รูปโปรไฟล์จาก url ของรูปภาพที่ได้จาก database
         while (rs.next()) {
             String url = rs.getString("url") == null ? "profile/userIcon.png" : rs.getString("url");
-            File file = new File(rs.getString("url"));
+            File file = new File(url);
             if(!file.exists()){
                 url = "profile/userIcon.png";
             }
