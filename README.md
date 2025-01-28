@@ -52,6 +52,8 @@
 
 3. Run the main application file to launch the program.
 
+4. Take a look at App/ConnectData.java. You need to change Username and Password on your own
+
 ---
 
 ## 📁 Directory Structure

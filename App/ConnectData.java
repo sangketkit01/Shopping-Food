@@ -4,7 +4,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class ConnectData {
-    private final String query = "jdbc:mysql://localhost:3306/user_data?user=root&password=0627457454New";
+    private final String query = "jdbc:mysql://localhost:3306/user_data?user=your_username&password=your_password";
     private Connection con = null;
     private Statement st = null;
     private ResultSet rs = null;
